@@ -1,0 +1,38 @@
+{
+  "name": "tuen",
+  "version": "0.1.0",
+  "description": "A holistic view of a person.",
+  "main": "server/index.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jquery": "^2.2.0",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "socket.io": "^1.4.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run predev | nodemon --harmony .",
+    "predev": "livereload . &"
+  },
+  "author": "Gilbert Wat",
+  "license": "MIT",
+  "devDependencies": {
+    "jspm": "^0.16.24",
+    "livereload": "^0.4.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "client"
+    },
+    "dependencies": {
+      "jquery": "npm:jquery@^2.2.0",
+      "socket.io": "npm:socket.io@^1.4.4"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
